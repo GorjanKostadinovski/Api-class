@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "clCU+cQSBcotxV262wDShC0ru8LR2Q0r16hVuvb5PicQEolIBPXX+/VacKCeTGagtoB5EeMBwKjmAqxm2tMdCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gorjan.Kostadinovski\\source\\repos\\Api-class\\Api class 2\\Api class 2\\Api class 2\\Api class 2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
