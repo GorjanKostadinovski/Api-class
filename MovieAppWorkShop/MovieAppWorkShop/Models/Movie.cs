@@ -2,7 +2,7 @@
 using MovieAppWorkShop.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MovieAppWorkShop.Entities
+namespace MovieAppWorkShop.Models
 {
     public class Movie:BaseEntity
     {
@@ -13,7 +13,15 @@ namespace MovieAppWorkShop.Entities
         public int Year { get; set; }
 
         public MovieGenre Genre { get; set; }
+
+        public Movie()
+        {
+
+        }
+
     }
+
+
 
 
 }

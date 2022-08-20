@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using MovieAppWorkShop.DTOs;
-using MovieAppWorkShop.Entities;
+using MovieAppWorkShop.Contracts;
+using MovieAppWorkShop.Database;
+
+
 
 namespace MovieAppWorkShop.Controllers
 {
@@ -9,73 +11,88 @@ namespace MovieAppWorkShop.Controllers
     [ApiController]
     public class MovieController : ControllerBase
     {
-        [HttpGet("getMovieWithDto")]
-        public IActionResult GetMovieByIdDto([FromQuery] GetMovieByIdDTO movieIdDto)
-        {
-            Movie movieDb = StaticDb.Movies.FirstOrDefault(x => x.Id == movieIdDto.Id);
+        public readonly MoviesDbContext _moviesDbContext;
 
-            if (movieDb == null)
+        public MovieController(MoviesDbContext moviesDbContext)
+        {
+            _moviesDbContext = moviesDbContext;
+        }
+           
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetMovieByIdDto([FromRoute] int id)
+        {
+            GetMovieByIdDTO? movieDTO = _moviesDbContext.Movies.Select(x => new GetMovieByIdDTO()
+            {
+                Id = x.Id,
+                Title = x.Title,
+                Year = x.Year
+
+            }).SingleOrDefault(x => x.Id == id);
+
+            if (movieDTO == null)
             {
                 return NotFound();
             }
 
-            return Ok(movieDb);
+            return Ok(movieDTO);
         }
 
-        [HttpGet("getAllMovies")]
+        //[HttpGet("getAllMovies")]
 
-        public IActionResult GetAllMovies()
-        {
-            List<Movie> movieDb = StaticDb.Movies;
-            foreach(Movie movie in movieDb)
-            {
-                movie.Genre.ToString();
-            }
+        //public IActionResult GetAllMovies()
+        //{
+        //    List<Movie> movieDb = StaticDb.Movies;
+        //    foreach(Movie movie in movieDb)
+        //    {
+        //        movie.Genre.ToString();
+        //    }
 
-            return Ok(movieDb);
-        }
+        //    return Ok(movieDb);
+        //}
 
-        [HttpGet("getMovieWithGenreDto")]
-        public IActionResult GetMovieByGenreDto([FromQuery] GetMovieByGenreDTO movieGenreDto)
-        {
-            List<Movie> movieDb = StaticDb.Movies.Where(x => x.Genre == movieGenreDto.Genre).ToList();
-            foreach(Movie movie in movieDb)
-            {
-                movie.Genre.ToString();
-            }
-            if (movieDb == null)
-            {
-                return NotFound();
-            }
+        //[HttpGet("getMovieWithGenreDto")]
+        //public IActionResult GetMovieByGenreDto([FromQuery] GetMovieByGenreDTO movieGenreDto)
+        //{
+        //    List<Movie> movieDb = StaticDb.Movies.Where(x => x.Genre == movieGenreDto.Genre).ToList();
+        //    foreach(Movie movie in movieDb)
+        //    {
+        //        movie.Genre.ToString();
+        //    }
+        //    if (movieDb == null)
+        //    {
+        //        return NotFound();
+        //    }
             
 
-            return Ok(movieDb);
-        }
+        //    return Ok(movieDb);
+        //}
 
-        [HttpPost("AddMovie")]
-        public IActionResult AddNewMovie([FromBody] CreateMovieDTO addMovieDTO)
-        {
-            Movie newMovie = new Movie();
-            newMovie.Id = addMovieDTO.Id;
-            newMovie.Title = addMovieDTO.Title;
-            newMovie.Year = addMovieDTO.Year;
-            newMovie.Genre = addMovieDTO.Genre;
-            newMovie.Description = addMovieDTO.Description;
+        //[HttpPost("AddMovie")]
+        //public IActionResult AddNewMovie([FromBody] CreateMovieDTO addMovieDTO)
+        //{
+        //    Movie newMovie = new Movie();
+        //    newMovie.Id = addMovieDTO.Id;
+        //    newMovie.Title = addMovieDTO.Title;
+        //    newMovie.Year = addMovieDTO.Year;
+        //    newMovie.Genre = addMovieDTO.Genre;
+        //    newMovie.Description = addMovieDTO.Description;
 
-            StaticDb.Movies.Add(newMovie);
-            return Ok();
-        }
+        //    StaticDb.Movies.Add(newMovie);
+        //    return Ok();
+        //}
 
-        [HttpDelete("DeleteMovie")]
-        public IActionResult RemoveMovieById(int id)
-        {
-            Movie movie = StaticDb.Movies.FirstOrDefault(x => x.Id == id);
-            if (movie == null)
-            {
-                return NotFound();
-            }
-            StaticDb.Movies.Remove(movie);
-            return Ok();
-        }
+        //[HttpDelete("DeleteMovie")]
+        //public IActionResult RemoveMovieById(int id)
+        //{
+        //    Movie movie = StaticDb.Movies.FirstOrDefault(x => x.Id == id);
+        //    if (movie == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    StaticDb.Movies.Remove(movie);
+        //    return Ok();
+        //}
     }
 }

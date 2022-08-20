@@ -1,6 +1,6 @@
 ﻿using MovieAppWorkShop.Enums;
 
-namespace MovieAppWorkShop.DTOs
+namespace MovieAppWorkShop.Contracts
 {
     public class CreateMovieDTO
     {

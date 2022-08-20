@@ -1,8 +1,8 @@
-﻿using MovieAppWorkShop.Entities;
+﻿using MovieAppWorkShop.Models;
 
-namespace MovieAppWorkShop
+namespace MovieAppWorkShop.Database.Seeds
 {
-    public static class StaticDb
+    public class MovieSeed
     {
         public static List<Movie> Movies = new List<Movie>
         {
@@ -11,14 +11,7 @@ namespace MovieAppWorkShop
             new Movie{Id = 3,Title = "Avengers:Endgame",Year = 2019,Genre = Enums.MovieGenre.Fantasy,Description = "Superhero Movie"},
             new Movie{Id = 4,Title = "RushHour",Year = 1998,Genre = Enums.MovieGenre.Comedy,Description = "Jackie Chan action comedy"},
             new Movie{Id = 5,Title= "Avatar",Year = 2009,Genre = Enums.MovieGenre.Fantasy,Description = "Movie about blue aliens"}
-        
+
         };
-
-        public static List<Director> Directors = new List<Director>
-        {
-            new Director{ FirstName = "a",LastName = "b", }
-        };
-
-
     }
 }
