@@ -1,10 +1,11 @@
-﻿using MovieAppWorkShop.Models;
+﻿using MovieAppWorkShop.Domain.Models;
+using MovieAppWorkShop.Models;
 
-namespace MovieAppWorkShop.Database.Seeds
+namespace MovieAppWorkShop.Domain.Database.Seeds
 {
     public class MovieSeed
     {
-        public static List<Movie> Movies = new List<Movie>
+        public static List<Movie> Movies = new List<Movie>()
         {
             new Movie{Id = 1, Title = "Titanic", Year = 1997,Genre = Enums.MovieGenre.Tragedy, Description = "ThE story Of the singking of the cruiseShip Named The Titanic"},
             new Movie{Id = 2,Title = "The GodFather",Year= 1972,Genre = Enums.MovieGenre.Thriller,Description = "Italian Mafia"},

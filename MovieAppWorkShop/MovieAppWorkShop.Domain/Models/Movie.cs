@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MovieAppWorkShop.Domain.Models;
 using MovieAppWorkShop.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MovieAppWorkShop.Models
+namespace MovieAppWorkShop.Domain.Models
 {
     public class Movie:BaseEntity
     {

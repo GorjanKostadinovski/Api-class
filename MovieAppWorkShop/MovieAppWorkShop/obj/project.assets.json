@@ -705,6 +705,39 @@
             "rid": "win"
           }
         }
+      },
+      "MovieAppWorkShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/MovieAppWorkShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieAppWorkShop.Domain.dll": {}
+        }
+      },
+      "MovieAppWorkShop.Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "MovieAppWorkShop.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieAppWorkShop.Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieAppWorkShop.Storage.dll": {}
+        }
       }
     }
   },
@@ -2051,6 +2084,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MovieAppWorkShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MovieAppWorkShop.Domain/MovieAppWorkShop.Domain.csproj",
+      "msbuildProject": "../MovieAppWorkShop.Domain/MovieAppWorkShop.Domain.csproj"
+    },
+    "MovieAppWorkShop.Storage/1.0.0": {
+      "type": "project",
+      "path": "../MovieAppWorkShop.Storage/MovieAppWorkShop.Storage.csproj",
+      "msbuildProject": "../MovieAppWorkShop.Storage/MovieAppWorkShop.Storage.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2061,23 +2104,25 @@
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
+      "MovieAppWorkShop.Domain >= 1.0.0",
+      "MovieAppWorkShop.Storage >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\": {}
+    "C:\\Users\\code\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gorjan.Kostadinovski\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\MovieAppWorkShop.csproj",
+      "projectUniqueName": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\MovieAppWorkShop.csproj",
       "projectName": "MovieAppWorkShop",
-      "projectPath": "C:\\Users\\Gorjan.Kostadinovski\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\MovieAppWorkShop.csproj",
-      "packagesPath": "C:\\Users\\Gorjan.Kostadinovski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gorjan.Kostadinovski\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\obj\\",
+      "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\MovieAppWorkShop.csproj",
+      "packagesPath": "C:\\Users\\code\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gorjan.Kostadinovski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\code\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2090,7 +2135,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj"
+            },
+            "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj": {
+              "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

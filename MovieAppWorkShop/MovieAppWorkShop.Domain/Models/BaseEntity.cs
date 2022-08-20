@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MovieAppWorkShop.Models
+namespace MovieAppWorkShop.Domain.Models
 {
     public class BaseEntity
     {

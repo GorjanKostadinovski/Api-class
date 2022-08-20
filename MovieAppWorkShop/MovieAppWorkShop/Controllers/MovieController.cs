@@ -17,7 +17,7 @@ namespace MovieAppWorkShop.Controllers
         {
             _moviesDbContext = moviesDbContext;
         }
-           
+
 
         [HttpGet]
         [Route("{id}")]
@@ -39,18 +39,26 @@ namespace MovieAppWorkShop.Controllers
             return Ok(movieDTO);
         }
 
-        //[HttpGet("getAllMovies")]
+        [HttpGet]
+        [Route("{id}/details")]
+        public IActionResult GetMoviesDetails([FromRoute] int id)
+        {
+            var movie = (from dbMovie in _moviesDbContext.Movies
 
-        //public IActionResult GetAllMovies()
-        //{
-        //    List<Movie> movieDb = StaticDb.Movies;
-        //    foreach(Movie movie in movieDb)
-        //    {
-        //        movie.Genre.ToString();
-        //    }
+                         where dbMovie.Id == id
+                         select new
+                         {
+                             dbMovie
+                         }).SingleOrDefault();
 
-        //    return Ok(movieDb);
-        //}
+            if (movie is null)
+            {
+                return NotFound();
+            }
+
+            return Ok(movie);
+
+        }
 
         //[HttpGet("getMovieWithGenreDto")]
         //public IActionResult GetMovieByGenreDto([FromQuery] GetMovieByGenreDTO movieGenreDto)
@@ -64,7 +72,7 @@ namespace MovieAppWorkShop.Controllers
         //    {
         //        return NotFound();
         //    }
-            
+
 
         //    return Ok(movieDb);
         //}

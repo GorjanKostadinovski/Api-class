@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MovieAppWorkShop.Database.Seeds;
+using MovieAppWorkShop.Domain.Database.Seeds;
+using MovieAppWorkShop.Domain.Models;
 using MovieAppWorkShop.Models;
+using MovieAppWorkShop.Storage.Database;
 
 namespace MovieAppWorkShop.Database
 {
-    public class MoviesDbContext : DbContext
+    public class MoviesDbContext : DbContext, IMoviesDbContext
     {
         public DbSet<Movie> Movies { get; set; }
 
