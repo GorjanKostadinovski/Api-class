@@ -14,6 +14,10 @@
           "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
+          "MovieAppWorkShop.Contracts": "1.0.0",
+          "MovieAppWorkShop.Domain": "1.0.0",
+          "MovieAppWorkShop.Services": "1.0.0",
+          "MovieAppWorkShop.Storage": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -483,6 +487,54 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "MovieAppWorkShop.Contracts/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "MovieAppWorkShop.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MovieAppWorkShop.Contracts.dll": {}
+        }
+      },
+      "MovieAppWorkShop.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "runtime": {
+          "MovieAppWorkShop.Domain.dll": {}
+        }
+      },
+      "MovieAppWorkShop.Services/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "MovieAppWorkShop.Contracts": "1.0.0",
+          "MovieAppWorkShop.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MovieAppWorkShop.Services.dll": {}
+        }
+      },
+      "MovieAppWorkShop.Storage/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "MovieAppWorkShop.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MovieAppWorkShop.Storage.dll": {}
+        }
       }
     }
   },
@@ -834,6 +886,26 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "MovieAppWorkShop.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieAppWorkShop.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieAppWorkShop.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieAppWorkShop.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

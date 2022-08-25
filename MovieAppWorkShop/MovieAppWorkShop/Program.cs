@@ -1,6 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using MovieAppWorkShop.Contracts.Services;
+using MovieAppWorkShop.Database;
+using MovieAppWorkShop.Domain.Repositories;
+using MovieAppWorkShop.Domain.UnitOfWork;
 using MovieAppWorkShop.Registrations;
+using MovieAppWorkShop.Services.Services;
+using MovieAppWorkShop.Storage.Database;
+using MovieAppWorkShop.Storage.Repositories;
+using MovieAppWorkShop.Storage.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +18,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen()
                 .RegisterDatabase(builder.Configuration.GetConnectionString("Database"));
+builder.Services
+    .AddDbContext<IMoviesDbContext, MoviesDbContext>(options =>
+    {
+        options.UseSqlServer();
+    })
+    .AddScoped<IMovieRepository, MovieRepositoriy>()
+    .AddScoped<IMovieService,MovieService>()
+    .AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

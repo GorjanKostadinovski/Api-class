@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {}
+    "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {
+    "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj",
         "projectName": "MovieAppWorkShop.Domain",
-        "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj",
+        "projectPath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj",
         "packagesPath": "C:\\Users\\code\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\obj\\",
+        "outputPath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\code\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -23,7 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MovieAppWorkShop.Contracts\MovieAppWorkShop.Contracts.csproj" />
     <ProjectReference Include="..\MovieAppWorkShop.Domain\MovieAppWorkShop.Domain.csproj" />
+    <ProjectReference Include="..\MovieAppWorkShop.Services\MovieAppWorkShop.Services.csproj" />
     <ProjectReference Include="..\MovieAppWorkShop.Storage\MovieAppWorkShop.Storage.csproj" />
   </ItemGroup>
 

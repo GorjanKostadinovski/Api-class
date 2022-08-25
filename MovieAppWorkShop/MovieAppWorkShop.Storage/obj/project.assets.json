@@ -1895,11 +1895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj",
+      "projectUniqueName": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj",
       "projectName": "MovieAppWorkShop.Storage",
-      "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj",
+      "projectPath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\MovieAppWorkShop.Storage.csproj",
       "packagesPath": "C:\\Users\\code\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\obj\\",
+      "outputPath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Storage\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\code\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1916,8 +1916,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj"
+            "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Domain\\MovieAppWorkShop.Domain.csproj"
             }
           }
         }

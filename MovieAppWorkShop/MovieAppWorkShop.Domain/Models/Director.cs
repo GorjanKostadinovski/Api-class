@@ -1,4 +1,6 @@
-﻿namespace MovieAppWorkShop.Models
+﻿using MovieAppWorkShop.Domain.Models;
+
+namespace MovieAppWorkShop.Models
 {
     public class Director
     {

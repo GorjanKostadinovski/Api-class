@@ -10,13 +10,13 @@ namespace MovieAppWorkShop.Domain.Repositories
 {
     public interface IMovieRepository
     {
-        Task<IReadOnlyList<Movie>> GetAllPizzasAsync();
+        Task<IReadOnlyList<Movie>> GetAllMoviesAsync();
 
-        Movie GetPizza(int id);
+        Task< Movie> GetMovieAsync(int id);
 
         
-        void Insert(Movie newMovie);
-        void Delete(int id);
-        void Update(Movie movie);
+        void InsertAsync(Movie newMovie);
+        void DeleteAsync(int id);
+        void  UpdateAsync(Movie movie);
     }
 }

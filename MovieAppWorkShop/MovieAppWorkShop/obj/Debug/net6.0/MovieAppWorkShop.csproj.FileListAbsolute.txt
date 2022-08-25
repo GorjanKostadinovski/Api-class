@@ -120,3 +120,11 @@ C:\Users\code\Source\Repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\obj\Debug
 C:\Users\code\Source\Repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\obj\Debug\net6.0\MovieAppWorkShop.pdb
 C:\Users\code\Source\Repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\obj\Debug\net6.0\MovieAppWorkShop.genruntimeconfig.cache
 C:\Users\code\Source\Repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\obj\Debug\net6.0\ref\MovieAppWorkShop.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Contracts.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Domain.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Services.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Storage.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Contracts.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Domain.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Services.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Storage.pdb

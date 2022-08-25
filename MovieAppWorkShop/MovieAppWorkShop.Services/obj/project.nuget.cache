@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7GRIiip8/sYVIkZzEM4IAI8aYGEsbGFc2WKxsIMRBU18ttncrD/25gk0ud0lc6oa5YrBLajcMZda1iq18A+dVg==",
+  "dgSpecHash": "1uR2VAzu+Q5GPiYn3NAkkbfXgtpiuPLjxs9ULclGs1cB/0rybpOaMH9ixj47+OC/7cgmsXvVJtDjT72x4yiM2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\code\\Source\\Repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Services\\MovieAppWorkShop.Services.csproj",
+  "projectFilePath": "C:\\Users\\code\\source\\repos\\Api-class\\MovieAppWorkShop\\MovieAppWorkShop.Services\\MovieAppWorkShop.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\code\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\code\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

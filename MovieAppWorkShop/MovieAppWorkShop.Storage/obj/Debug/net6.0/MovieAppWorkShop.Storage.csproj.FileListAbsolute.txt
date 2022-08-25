@@ -1,0 +1,17 @@
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.csproj.AssemblyReference.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.AssemblyInfoInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.AssemblyInfo.cs
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.csproj.CoreCompileInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Storage.deps.json
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Storage.runtimeconfig.json
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Storage.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Storage.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Domain.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\bin\Debug\net6.0\MovieAppWorkShop.Domain.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.csproj.CopyComplete
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\refint\MovieAppWorkShop.Storage.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\MovieAppWorkShop.Storage.genruntimeconfig.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Storage\obj\Debug\net6.0\ref\MovieAppWorkShop.Storage.dll

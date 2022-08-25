@@ -1,0 +1,14 @@
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.csproj.AssemblyReference.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.AssemblyInfoInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.AssemblyInfo.cs
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\bin\Debug\net6.0\MovieAppWorkShop.Domain.deps.json
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\bin\Debug\net6.0\MovieAppWorkShop.Domain.runtimeconfig.json
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\bin\Debug\net6.0\MovieAppWorkShop.Domain.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\bin\Debug\net6.0\MovieAppWorkShop.Domain.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\refint\MovieAppWorkShop.Domain.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\MovieAppWorkShop.Domain.genruntimeconfig.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Domain\obj\Debug\net6.0\ref\MovieAppWorkShop.Domain.dll

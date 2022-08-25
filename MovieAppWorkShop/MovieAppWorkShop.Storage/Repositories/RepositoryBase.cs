@@ -1,12 +1,5 @@
-﻿using MovieAppWorkShop.Database;
-using MovieAppWorkShop.Domain.Models;
-using MovieAppWorkShop.Models;
+﻿using MovieAppWorkShop.Domain.Models;
 using MovieAppWorkShop.Storage.Database;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieAppWorkShop.Storage.Repositories
 {
@@ -37,6 +30,11 @@ namespace MovieAppWorkShop.Storage.Repositories
         protected void DeleteEntity(int id)
         {
             _movieDbContext.Set<T>().Remove(GetById(id).SingleOrDefault());
+        }
+
+        protected void UpdateEntity(T item)
+        {
+            _movieDbContext.Set<T>().Update(item);
         }
     }
 }

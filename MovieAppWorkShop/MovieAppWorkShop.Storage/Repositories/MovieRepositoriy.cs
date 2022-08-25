@@ -13,31 +13,31 @@ namespace MovieAppWorkShop.Storage.Repositories
 
         }
 
-        public async Task Delete(int id)
+        public void DeleteAsync(int id)
         {
             DeleteEntity(id);
         }
 
-        public async Task<IReadOnlyList<Movie>> GetAllNotesAsync()
+        public async Task<IReadOnlyList<Movie>> GetAllMoviesAsync()
         {
             IQueryable<Movie> noteQuery = GetAll();
 
             return await noteQuery.ToArrayAsync();
         }
 
-        public async Task<Movie> GetNote(int id)
+        public async Task<Movie> GetMovieAsync(int id)
         {
             return await GetById(id).SingleOrDefaultAsync();
         }
 
-        public async Task Insert(Movie newMovies)
+        public void InsertAsync(Movie newMovies)
         {
-            InsertEntity(newMovies);
+             InsertEntity(newMovies);
         }
 
-        public async Task UpdateNoteAsync(Movie existingNote)
+        public void UpdateAsync(Movie existingMovie)
         {
-            UpdateEntity(existingNote);
+            UpdateEntity(existingMovie);
         }
 
     }
