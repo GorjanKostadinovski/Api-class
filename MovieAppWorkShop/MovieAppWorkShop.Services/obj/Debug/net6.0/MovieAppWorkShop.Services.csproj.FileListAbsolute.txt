@@ -17,3 +17,5 @@ C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\obj\Debug\net6.0\MovieAppWorkShop.Services.pdb
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\obj\Debug\net6.0\MovieAppWorkShop.Services.genruntimeconfig.cache
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\obj\Debug\net6.0\ref\MovieAppWorkShop.Services.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\bin\Debug\net6.0\MovieAppWorkShop.Shared.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Services\bin\Debug\net6.0\MovieAppWorkShop.Shared.pdb

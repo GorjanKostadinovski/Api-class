@@ -14,7 +14,10 @@ namespace MovieAppWorkShop.Domain.Models
         public int Year { get; set; }
 
         public MovieGenre Genre { get; set; }
-
+         
+        [ForeignKey(nameof(UserId))]
+        public User FavoritedUsers { get; set; }
+        public int UserId { get; set; }
         public Movie()
         {
 

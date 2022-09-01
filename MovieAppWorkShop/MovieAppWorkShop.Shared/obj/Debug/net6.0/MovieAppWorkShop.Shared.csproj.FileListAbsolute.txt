@@ -1,0 +1,12 @@
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\bin\Debug\net6.0\MovieAppWorkShop.Shared.deps.json
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\bin\Debug\net6.0\MovieAppWorkShop.Shared.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\bin\Debug\net6.0\MovieAppWorkShop.Shared.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.csproj.AssemblyReference.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.AssemblyInfoInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.AssemblyInfo.cs
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\refint\MovieAppWorkShop.Shared.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\MovieAppWorkShop.Shared.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop.Shared\obj\Debug\net6.0\ref\MovieAppWorkShop.Shared.dll

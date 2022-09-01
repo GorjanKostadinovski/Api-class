@@ -128,3 +128,7 @@ C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Domain.pdb
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Services.pdb
 C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Storage.pdb
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Shared.dll
+C:\Users\code\source\repos\Api-class\MovieAppWorkShop\MovieAppWorkShop\bin\Debug\net6.0\MovieAppWorkShop.Shared.pdb

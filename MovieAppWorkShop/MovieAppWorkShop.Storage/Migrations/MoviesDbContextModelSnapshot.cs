@@ -21,7 +21,7 @@ namespace MovieAppWorkShop.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MovieAppWorkShop.Models.Movie", b =>
+            modelBuilder.Entity("MovieAppWorkShop.Domain.Models.Movie", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,10 +40,15 @@ namespace MovieAppWorkShop.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Movies");
 
@@ -54,6 +59,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "ThE story Of the singking of the cruiseShip Named The Titanic",
                             Genre = 5,
                             Title = "Titanic",
+                            UserId = 1,
                             Year = 1997
                         },
                         new
@@ -62,6 +68,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Italian Mafia",
                             Genre = 9,
                             Title = "The GodFather",
+                            UserId = 1,
                             Year = 1972
                         },
                         new
@@ -70,6 +77,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Superhero Movie",
                             Genre = 6,
                             Title = "Avengers:Endgame",
+                            UserId = 1,
                             Year = 2019
                         },
                         new
@@ -78,6 +86,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Jackie Chan action comedy",
                             Genre = 3,
                             Title = "RushHour",
+                            UserId = 2,
                             Year = 1998
                         },
                         new
@@ -86,8 +95,77 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Movie about blue aliens",
                             Genre = 6,
                             Title = "Avatar",
+                            UserId = 2,
                             Year = 2009
                         });
+                });
+
+            modelBuilder.Entity("MovieAppWorkShop.Domain.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "Bojan",
+                            LastName = "Damchevski",
+                            Password = "Test123!",
+                            Role = 1,
+                            Username = "Bojandamcevski98"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FirstName = "Mihajlo",
+                            LastName = "Dimovski",
+                            Password = "Test123!",
+                            Role = 1,
+                            Username = "MihajloDimovski96"
+                        });
+                });
+
+            modelBuilder.Entity("MovieAppWorkShop.Domain.Models.Movie", b =>
+                {
+                    b.HasOne("MovieAppWorkShop.Domain.Models.User", "FavoritedUsers")
+                        .WithMany("Movies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("FavoritedUsers");
+                });
+
+            modelBuilder.Entity("MovieAppWorkShop.Domain.Models.User", b =>
+                {
+                    b.Navigation("Movies");
                 });
 #pragma warning restore 612, 618
         }

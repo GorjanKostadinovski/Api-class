@@ -1,6 +1,8 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MovieAppWorkShop.Contracts;
+using MovieAppWorkShop.Contracts.DTOs.UserDtos;
 using MovieAppWorkShop.Contracts.Services;
 using MovieAppWorkShop.Database;
 
@@ -10,13 +12,37 @@ namespace MovieAppWorkShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class MovieController : ControllerBase
     {
         public readonly IMovieService _movieService;
+        public readonly IUserServices _userServices;
 
-        public MovieController(IMovieService movieService)
+        public MovieController(IMovieService movieService,IUserServices userServices)
         {
             _movieService = movieService;
+            _userServices = userServices;
+        }
+
+        [HttpPost("register")]
+        [AllowAnonymous]
+        public IActionResult RegisterUser([FromBody] RegisterUserDto registerUserDto)
+        {
+            if (registerUserDto == null)
+            {
+                return BadRequest();
+            }
+
+            _userServices.RegisterUser(registerUserDto);
+
+            return Ok(registerUserDto);
+        }
+
+        [HttpPost("login")]
+        [AllowAnonymous]
+        public async Task<ActionResult<string>> LoginUser([FromBody] LoginUserDto loginUserDto)
+        {
+            return Ok(await _userServices.LoginUser(loginUserDto));
         }
 
 

@@ -19,11 +19,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MovieAppWorkShop.Contracts\MovieAppWorkShop.Contracts.csproj" />
     <ProjectReference Include="..\MovieAppWorkShop.Domain\MovieAppWorkShop.Domain.csproj" />
+    <ProjectReference Include="..\MovieAppWorkShop.Shared\MovieAppWorkShop.Shared.csproj" />
   </ItemGroup>
 
 </Project>
