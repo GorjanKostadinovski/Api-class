@@ -20,5 +20,10 @@ namespace MovieAppWorkShop.Domain.Models
         public List<Movie> Movies { get; set; } = new List<Movie>();
 
         public Role Role { get; set; }
+
+        public User()
+        {
+
+        }
     }
 }

@@ -16,9 +16,9 @@ namespace MovieAppWorkShop.Services.Services
 {
     public class UserService : IUserServices
     {
-        private IUserRepository _userRepository;
-        private IUnitOfWork _unitOfWork;
-        IOptions<Auth> _options;
+        private readonly IUserRepository _userRepository;
+        private readonly IUnitOfWork _unitOfWork;
+        readonly IOptions<Auth> _options;
 
 
         public UserService(IUserRepository userRepository, IUnitOfWork unitOfWork, IOptions<Auth> options)

@@ -30,7 +30,10 @@ builder.Services
     .AddScoped<IMovieRepository, MovieRepositoriy>()
     .AddScoped<IMovieService,MovieService>()
     .AddScoped<IUnitOfWork, UnitOfWork>()
-    .AddScoped<IUserRepository,UserRepository>();
+    .AddScoped<IUserRepository,UserRepository>()
+    .AddScoped<IUserServices,UserService>();
+
+
 var appConfig = builder.Configuration.GetSection("Auth");
 
 //var secret = appConfig.GetValue<string>("SecretKey");

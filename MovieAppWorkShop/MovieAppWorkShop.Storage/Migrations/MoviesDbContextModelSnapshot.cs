@@ -7,7 +7,7 @@ using MovieAppWorkShop.Database;
 
 #nullable disable
 
-namespace MovieAppWorkShop.Migrations
+namespace MovieAppWorkShop.Storage.Migrations
 {
     [DbContext(typeof(MoviesDbContext))]
     partial class MoviesDbContextModelSnapshot : ModelSnapshot

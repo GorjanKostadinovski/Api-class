@@ -8,11 +8,11 @@ using MovieAppWorkShop.Database;
 
 #nullable disable
 
-namespace MovieAppWorkShop.Migrations
+namespace MovieAppWorkShop.Storage.Migrations
 {
     [DbContext(typeof(MoviesDbContext))]
-    [Migration("20220901181549_userupdate")]
-    partial class userupdate
+    [Migration("20220903071935_Initialize")]
+    partial class Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,7 +61,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "ThE story Of the singking of the cruiseShip Named The Titanic",
                             Genre = 5,
                             Title = "Titanic",
-                            UserId = 0,
+                            UserId = 1,
                             Year = 1997
                         },
                         new
@@ -70,7 +70,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Italian Mafia",
                             Genre = 9,
                             Title = "The GodFather",
-                            UserId = 0,
+                            UserId = 1,
                             Year = 1972
                         },
                         new
@@ -79,7 +79,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Superhero Movie",
                             Genre = 6,
                             Title = "Avengers:Endgame",
-                            UserId = 0,
+                            UserId = 1,
                             Year = 2019
                         },
                         new
@@ -88,7 +88,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Jackie Chan action comedy",
                             Genre = 3,
                             Title = "RushHour",
-                            UserId = 0,
+                            UserId = 2,
                             Year = 1998
                         },
                         new
@@ -97,7 +97,7 @@ namespace MovieAppWorkShop.Migrations
                             Description = "Movie about blue aliens",
                             Genre = 6,
                             Title = "Avatar",
-                            UserId = 0,
+                            UserId = 2,
                             Year = 2009
                         });
                 });
