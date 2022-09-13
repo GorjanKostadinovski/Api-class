@@ -33,11 +33,8 @@ namespace MovieAppWorkShop.Services.Services
         public async Task UpdateMovieAsync(int id, GetMovieByIdDTO movieToUpdate)
         {
             Movie movie = await _movieRepository.GetMovieAsync(id);
-
             movie.UpdateMovie(movieToUpdate.ToMovie());
-          //movie.Title = movieToUpdate.Title;
-          //movie.Year = movieToUpdate.Year;
-          //movie.Description = movieToUpdate.Description;
+
 
              _movieRepository.UpdateAsync(movie);
             await _unitOfWork.SaveChangesAsync();

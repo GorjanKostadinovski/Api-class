@@ -25,10 +25,10 @@ namespace MovieAppWorkShop.Domain.Models
 
         public void UpdateMovie(Movie movie)
         {
-            movie.Id = Id;
-            movie.Title = Title;
-            movie.Year = Year;
-            movie.Description = Description;
+            Title = movie.Title;
+            Year = movie.Year;
+            Description = movie.Description;
+
         }
 
     }

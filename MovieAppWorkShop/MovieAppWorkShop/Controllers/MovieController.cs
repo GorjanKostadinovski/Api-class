@@ -12,7 +12,7 @@ namespace MovieAppWorkShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+   // [Authorize(Roles = "Admin")]
     public class MovieController : ControllerBase
     {
         public readonly IMovieService _movieService;
@@ -50,6 +50,7 @@ namespace MovieAppWorkShop.Controllers
         [Route("{id}")]
         public async Task<IActionResult> GetMovieByIdDto([FromRoute] int id)
         {
+
             GetMovieByIdDTO? movieDTO = await _movieService.GetMoviesAsync(id);
 
 
